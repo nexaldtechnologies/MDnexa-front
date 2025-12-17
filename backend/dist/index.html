@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>MDnexa – AI-Powered Medical Knowledge Engine</title>
+  <meta name="description"
+    content="MDnexa is an advanced AI-powered medical intelligence platform built for doctors, hospitals, residents, and students. Generate guidelines, SOPs, differentials, drug safety checks, and more." />
+  <meta name="keywords"
+    content="medical ai, mdnexa, ai doctor tool, medical guidelines, SOP generator, diagnosis AI, clinical support tool, nexald" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1C1CFF" />
+  <meta http-equiv="Cache-Control" content="public, max-age=604800, immutable" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MDnexa – Medical AI Assistant" />
+  <meta property="og:description"
+    content="Your AI-powered medical engine for accurate clinical guidance and intelligent decision support." />
+  <meta property="og:image" content="/logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mdnexa.com" />
+  <meta property="og:site_name" content="MDnexa" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MDnexa – Medical AI Assistant" />
+  <meta name="twitter:description" content="AI-powered medical reasoning, guidelines, SOPs, drug checks, and more." />
+  <meta name="twitter:image" content="/logo.png" />
+
+  <!-- Icons & Manifest -->
+  <link rel="icon" href="/logo.png" />
+  <link rel="apple-touch-icon" href="/logo.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="canonical" href="https://mdnexa.com" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MDnexa",
+    "url": "https://mdnexa.com",
+    "logo": "https://mdnexa.com/logo.png"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MDnexa",
+    "operatingSystem": "Web",
+    "applicationCategory": "MedicalApplication",
+    "description": "AI-powered medical knowledge engine that generates SOPs, guidelines, reasonings, and drug safety checks.",
+    "image": "https://mdnexa.com/logo.png",
+    "url": "https://mdnexa.com",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nexald Technologies"
+    }
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          },
+          colors: {
+            medical: {
+              50: '#F0F7FF',
+              100: '#E0EFFE',
+              200: '#B9DDFE',
+              300: '#7CBFFE',
+              400: '#369EFF',
+              500: '#0EA5E9', // Primary Brand
+              600: '#0284C7',
+              700: '#0369A1',
+              800: '#075985',
+              900: '#0C4A6E',
+            },
+            slate: {
+              850: '#151f2e', // Custom deep dark for sidebar
+            }
+          },
+          boxShadow: {
+            'subtle': '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+            'card': '0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02)',
+            'floating': '0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Professional Font Smoothing */
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Custom scrollbar for chat container */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #E2E8F0;
+      border-radius: 20px;
+    }
+
+    .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #334155;
+    }
+
+    /* Animation for modal */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.98);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 0.2s ease-out forwards;
+    }
+  </style>
+
+  <link rel="stylesheet" href="/index.css">
+  <script src="https://js.stripe.com/v3/"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-CjFnsC71.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
